@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Thinkful Madlibs</title>
+    {% block head %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style type="text/css">
+        #form-container {
+            width: 50%;
+            background-color: lavender;
+            padding: 25px 50px 25px 50px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+    </style>
+    {% endblock %}
+</head>
+<body>
+    <div class="container" id="form-container">
+        <form method="POST" action="/" role="form">
+            <div class="form-group">
+                <h2 class="text-center"><strong>Thinkful Madlibs!</strong></h2>
+                <input type="text" class="form-control" placeholder="Name" name="name"><br/>
+                <select class="form-control" name="pronouns">
+                    <option value="she/her">She/Her</option>
+                    <option value="he/his">He/His</option>
+                    <option value="they/their">They/Their</option>
+                </select><br/>
+                <input class="form-control" type="text" placeholder="A Huge Number" name="hugeNum"><br/>
+                <input class="form-control" type="text" placeholder="A Tedious Task" name="tediousTask"><br/>
+                <input class="form-control" placeholder="An Obnoxious Celebrity" type="text" name="obnoxiousCeleb"><br/>
+                <input class="form-control" placeholder="A Job Title" type="text" name="jobTitle"><br/>
+                <input class="form-control" placeholder="A Useless Skill" type="text" name="uselessSkill"><br/>
+                <input class="form-control" placeholder="An Adjective" type="text" name="adjective"><Br/>
+                <input class="form-control" placeholder="An Undesirable Task" type="text" name="undesirableTask"><br/>
+                <input class="form-control" placeholder="A Likeable Celebrity" type="text" name="likeableCeleb"><br/><br/>
+                <input type="submit" class="form-control btn-primary" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>

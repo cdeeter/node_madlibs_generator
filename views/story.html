@@ -1,0 +1,25 @@
+{% block head %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<style type="text/css">
+    .container {
+        margin-top: 50px;
+        width: 60%;
+        line-height: 2.5;
+        text-align: justify;
+        background-color: lavender;
+        border-radius: 10px;
+    }
+    
+    u {
+        background-color: white;
+        padding: 5px;
+        border-radius: 2px;
+    }
+</style>
+{% endblock %}
+
+<div class="container">
+    <h3><strong>Your Story...</strong></h3>
+    <p><u>&nbsp; {{madLib.name}} &nbsp;</u> was a <u>&nbsp; {{madLib.jobTitle}} &nbsp;</u> who loved technology. Although {{madLib.pronouns[0]}} loved parts of {{madLib.pronouns[1]}} job, {{madLib.pronouns[0]}} absolutely hated <u>&nbsp; {{madLib.tediousTask}} &nbsp;</u> and <u>&nbsp; {{madLib.undesirableTask}} &nbsp;</u>. So, <u>&nbsp; {{madLib.name}} &nbsp;</u> met with {{madLib.pronouns[1]}} life mentor, <u>&nbsp; {{madLib.likeableCeleb}} &nbsp;</u> who told them to learn how to <u>&nbsp; {{madLib.uselessSkill}} &nbsp;</u> with Thinkful. Thinkful didn't offer a course on <u>&nbsp; {{madLib.uselessSkill}} &nbsp;</u> so {{madLib.pronouns[0]}} studied programming instead.</p>
+    <p>What a great decision! With {{madLib.pronouns[1]}} new skills, <u>&nbsp; {{madLib.name}} &nbsp;</u> built a(n) <u>&nbsp; {{madLib.adjective}} &nbsp;</u> robot named <u>&nbsp; {{madLib.obnoxiousCeleb}} &nbsp;</u> that not only loved <u> &nbsp;{{madLib.undesirableTask}} &nbsp;</u> but did it <u>&nbsp; {{madLib.hugeNum}} &nbsp;</u> times faster.</p>
+</div>
